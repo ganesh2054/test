@@ -1,0 +1,50 @@
+﻿@model IEnumerable<CollegeManagement.Models.Student>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Birthday</th>
+            <th>Phon</th>
+            <th>Faculty</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Address</td>
+
+                <td>@student.Email</td>
+                <th>@student.Gender</th>
+                <td>@student.Birthday</td>
+                <th>@student.Phon</th>
+                <td>@student.Faculty</td>
+                <td>
+                    <a asp-controller="student" asp-action="studentdetails" asp-route-id="@student.id" class="btn-btn-primary">
+                        View
+                    </a>
+                </td>
+                <td>
+                    <a asp-controller="student" asp-action="EditStudent" asp-route-id="@student.id" class="btn-btn-primary">
+                        Update
+                    </a>
+                </td>
+                <td>
+                    <a asp-controller="student" asp-action="DeleteStudent" asp-route-id="@student.id" class="btn-btn-primary">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+
+
+
+    </tbody>
+
+</table>

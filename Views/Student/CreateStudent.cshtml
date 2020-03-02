@@ -1,0 +1,81 @@
+﻿@model CollegeManagement.ViewModels.StudentCreateViewModel
+
+    <div class="formstyle">
+        <form enctype="multipart/form-data" asp-controller="student" asp-action="index"
+              method="post" class="mt-3">
+
+            <label asp-for="Name"></label>
+
+            <input asp-for="Name" placeholder="Name" class="input">
+            <span asp-validation-for="Name"></span>
+            <br />
+            <br />
+            <label asp-for="Address"></label>
+
+            <input asp-for="Address" placeholder="Address" class="input">
+            <span asp-validation-for="Address"></span>
+            <br />
+            <br />
+            <label asp-for="Email"></label>
+
+            <input asp-for="Email" placeholder="Email" class="input">
+            <span asp-validation-for="Email" class="text-danger"></span>
+            <br />
+            <br />
+            <label asp-for="Gender"></label>
+            <select asp-for="Gender" class="input">
+
+               
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+           
+
+            </select>
+            <br />
+            <br />
+            <label asp-for="Birthday"></label>
+
+            <input asp-for="Birthday" placeholder="Birthday" class="input">
+            <span asp-validation-for="Birthday"></span>
+            <br />
+            <br />
+            <label asp-for="Phon"></label>
+
+            <input asp-for="Phon" placeholder="Phon" class="input">
+            <span asp-validation-for="Phon"></span>
+            <br />
+            <br />
+            <label asp-for="Faculty"></label>
+            <select asp-for="Faculty" class="input">
+
+                
+                <option value="0">Bsc.Csit</option>
+                <option value="1">BBS</option>
+                <option value="2">BBA</option>
+                <option value="3">BCA</option>
+                <option value="4">BBM</option>
+                <option value="5">BIM</option>
+
+            </select>
+            <br />
+            <br />
+            <label asp-for="Photo"></label>
+
+            <input asp-for="Photo" class="input">
+            <label>Choose File...</label>
+
+            <br />
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </div>
+
+
+
+          
+        </form>
+        
+    </div>

@@ -1,0 +1,30 @@
+﻿@model CollegeManagement.Models.Student
+@{
+    var photo = "~/img/" + (Model.PhotoPath ?? "noimage.jpg");
+
+}
+    <div class="studentdetails"style="font-size:20px">
+        <img src="@photo" asp-append-version="true" height="290" width="250" />
+        <br />
+        <br />
+
+        Name :@Model.Name
+        <br />
+        Address:@Model.Address
+        <br />
+        Email:@Model.Email
+        <br />
+        Gender:@Model.Gender
+        <br />
+        Birthday:@Model.Birthday
+        <br />
+        Phon:@Model.Phon
+        <br />
+        Faculty:@Model.Faculty
+        <br />
+
+
+        <a asp-controller="student" asp-action="StudentList"  class="btn-btn-primary">
+            Back
+        </a>
+    </div>

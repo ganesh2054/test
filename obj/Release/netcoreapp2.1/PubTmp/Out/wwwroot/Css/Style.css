@@ -1,0 +1,52 @@
+﻿.formstyle{
+    margin-left:150px;
+    margin-top:50px;
+}
+.input{
+    left:250px;
+    position:absolute;
+}
+.studentdetails{
+    margin-left:500px;
+   
+  
+}
+/*.indeximage {
+    margin-left: 400px;
+    margin-top: 200px;
+    height:300px;
+    width:200px;
+}
+#sidebar {
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    background: black;
+    left: -200px;
+    transition: all 500ms linear;
+}
+
+    #sidebar.active {
+        left: 20px;
+    }
+
+    #sidebar ul li {
+        color: white;
+        list-style: none;
+        padding: 15px 10px;
+        border-bottom: 1px solid rgba(100,100,100,0.3);
+    }
+
+    #sidebar .toggle-btn {
+        position: absolute;
+        left: 230px;
+        top: 20px;
+    }
+
+        #sidebar .toggle-btn span {
+            display: block;
+            width: 30px;
+            height: 5px;
+            background: #151710;
+            margin: 5px 5px;
+        }*/
